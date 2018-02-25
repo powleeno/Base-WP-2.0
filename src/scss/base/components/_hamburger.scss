@@ -1,0 +1,72 @@
+@mixin hamburger($topbar-logo-height, $topbar-scrolled-logo-height, $topbar-vertical-padding, $topbar-scrolled-vertical-padding) {
+  .hamburger {
+    height: $topbar-logo-height + $topbar-vertical-padding * 2;
+  }
+  body.scrolled {
+    .hamburger {
+      height: $topbar-scrolled-logo-height + $topbar-scrolled-vertical-padding * 2;
+    }
+  }
+}
+
+// ----------------------------------------------
+
+.hamburger {
+  @include base_transition($topbar-transition-time);
+  @include base_vertical_padding(0);
+  @include base_horizontal_padding(1em);
+  outline: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: $hamburger-z-index;
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: $body-color;
+  }
+}
+
+.hamburger-box {
+  display: block;
+}
+
+.hamburger.is-active {
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background-color: $body-color;
+  }
+}
+
+// XS -------------------------------------------
+
+.hamburger {
+  display: block;
+  height: $topbar-logo-height-xs + $topbar-vertical-padding-xs * 2;
+}
+body.scrolled {
+  .hamburger {
+    height: $topbar-scrolled-logo-height-xs + $topbar-scrolled-vertical-padding-xs * 2;
+  }
+}
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  .hamburger {
+    display: none;
+  }
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+
+}

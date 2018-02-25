@@ -1,0 +1,95 @@
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid,
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: $flexboxgrid-container-fluid-padding;
+  padding-left: $flexboxgrid-container-fluid-padding;
+}
+
+.row {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+// XS -------------------------------------------
+
+.container {
+  padding-left: $flexboxgrid-gutter-xs / 2;
+  padding-right: $flexboxgrid-gutter-xs / 2;
+}
+.row {
+  margin-right: - $flexboxgrid-gutter-xs / 2;
+  margin-left: - $flexboxgrid-gutter-xs / 2;
+}
+@include flexboxgrid_generate_columns('xs', $flexboxgrid-gutter-xs);
+@include flexboxgrid_generate_offsets('xs');
+@include flexboxgrid_generate_alignments('xs');
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  .container {
+    // width: $flexboxgrid-breakpoint-sm + $flexboxgrid-gutter-sm;
+    padding-left: $flexboxgrid-gutter-sm / 2;
+    padding-right: $flexboxgrid-gutter-sm / 2;
+  }
+  .row {
+    margin-right: - $flexboxgrid-gutter-sm / 2;
+    margin-left: - $flexboxgrid-gutter-sm / 2;
+  }
+  @include flexboxgrid_generate_columns('sm', $flexboxgrid-gutter-sm);
+  @include flexboxgrid_generate_offsets('sm');
+  @include flexboxgrid_generate_alignments('sm');
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+  .container {
+    width: $flexboxgrid-breakpoint-md - $flexboxgrid-gutter-md * 2;
+    padding-left: $flexboxgrid-gutter-md / 2;
+    padding-right: $flexboxgrid-gutter-md / 2;
+  }
+  .row {
+    margin-right: - $flexboxgrid-gutter-md / 2;
+    margin-left: - $flexboxgrid-gutter-md / 2;
+  }
+  @include flexboxgrid_generate_columns('md', $flexboxgrid-gutter-md);
+  @include flexboxgrid_generate_offsets('md');
+  @include flexboxgrid_generate_alignments('md');
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+  .container {
+    width: $flexboxgrid-breakpoint-lg - $flexboxgrid-gutter-lg * 2;
+    padding-left: $flexboxgrid-gutter-lg / 2;
+    padding-right: $flexboxgrid-gutter-lg / 2;
+  }
+  .row {
+    margin-right: - $flexboxgrid-gutter-lg / 2;
+    margin-left: - $flexboxgrid-gutter-lg / 2;
+  }
+  @include flexboxgrid_generate_columns('lg', $flexboxgrid-gutter-lg);
+  @include flexboxgrid_generate_offsets('lg');
+  @include flexboxgrid_generate_alignments('lg');
+}

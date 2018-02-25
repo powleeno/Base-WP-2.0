@@ -1,0 +1,180 @@
+// COLORS ---------------------------------------
+
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
+// FONT FAMILIES --------------------------------
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-serif: 'Lora', serif;
+
+// BODY -----------------------------------------
+
+$body-font-family: $font-family-serif;
+$body-font-weight: 400;
+$body-font-size: 16px;
+$body-line-height: 1.5;
+$body-color: $black;
+
+// HEADERS --------------------------------------
+
+$header-font-family: $font-family-sans-serif;
+$header-font-weight: 700;
+$header-line-height: 1.5;
+$header-color: $body-color;
+
+// XS -------------------------------------------
+
+$body-font-size-xs: 16px;
+$h1-font-size-xs: 40px;
+$h2-font-size-xs: 36px;
+$h3-font-size-xs: 30px;
+$h4-font-size-xs: 24px;
+$h5-font-size-xs: 20px;
+$h6-font-size-xs: 16px;
+
+// SM -------------------------------------------
+
+$body-font-size-sm: 16px;
+$h1-font-size-sm: 40px;
+$h2-font-size-sm: 36px;
+$h3-font-size-sm: 30px;
+$h4-font-size-sm: 24px;
+$h5-font-size-sm: 20px;
+$h6-font-size-sm: 16px;
+
+// MD -------------------------------------------
+
+$body-font-size-md: 16px;
+$h1-font-size-md: 40px;
+$h2-font-size-md: 36px;
+$h3-font-size-md: 30px;
+$h4-font-size-md: 24px;
+$h5-font-size-md: 20px;
+$h6-font-size-md: 16px;
+
+// LG -------------------------------------------
+
+$body-font-size-lg: 16px;
+$h1-font-size-lg: 40px;
+$h2-font-size-lg: 36px;
+$h3-font-size-lg: 30px;
+$h4-font-size-lg: 24px;
+$h5-font-size-lg: 20px;
+$h6-font-size-lg: 16px;
+
+// ANIMATIONS -----------------------------------
+
+$transition-time: 0.3s;
+
+
+// ----------------------------------------------
+
+
+$topbar-logo-height-xs: 20px;
+$topbar-logo-height-sm: 25px;
+$topbar-logo-height-md: 30px;
+$topbar-logo-height-lg: 30px;
+
+$topbar-vertical-padding-xs: 20px;
+$topbar-vertical-padding-sm: 20px;
+$topbar-vertical-padding-md: 30px;
+$topbar-vertical-padding-lg: 30px;
+
+$topbar-scrolled-logo-height-xs: 15px;
+$topbar-scrolled-logo-height-sm: 20px;
+$topbar-scrolled-logo-height-md: 25px;
+$topbar-scrolled-logo-height-lg: 25px;
+
+$topbar-scrolled-vertical-padding-xs: 20px;
+$topbar-scrolled-vertical-padding-sm: 20px;
+$topbar-scrolled-vertical-padding-md: 20px;
+$topbar-scrolled-vertical-padding-lg: 20px;
+
+$topbar-transition-time: $transition-time;
+
+$topbar-z-index: 10;
+
+// ----------------------------------------------
+
+$hamburger-z-index: 30;
+
+// ----------------------------------------------
+
+$mobile-menu-width: 300px;
+$mobile-menu-transition-time: $transition-time;
+$mobile-menu-z-index: 20;
+
+// ----------------------------------------------
+
+$header-vertical-padding-xs: 50px;
+$header-vertical-padding-sm: 66.666px;
+$header-vertical-padding-md: 83.333px;
+$header-vertical-padding-lg: 100px;
+
+// ----------------------------------------------
+
+$text-block-border-radius: 10px;
+
+$text-block-vertical-padding-xs: 30px;
+$text-block-vertical-padding-sm: 30px;
+$text-block-vertical-padding-md: 50px;
+$text-block-vertical-padding-lg: 50px;
+
+$text-block-horizontal-padding-xs: 30px;
+$text-block-horizontal-padding-sm: 40px;
+$text-block-horizontal-padding-md: 75px;
+$text-block-horizontal-padding-lg: 75px;
+
+// ----------------------------------------------
+
+$accordion-head-vertical-padding-xs: 20px;
+$accordion-head-vertical-padding-sm: 30px;
+$accordion-head-vertical-padding-md: 50px;
+$accordion-head-vertical-padding-lg: 50px;
+
+$accordion-head-horizontal-padding-xs: 30px;
+$accordion-head-horizontal-padding-sm: 40px;
+$accordion-head-horizontal-padding-md: 75px;
+$accordion-head-horizontal-padding-lg: 75px;
+
+$accordion-tab-horizontal-padding-xs: 15px;
+$accordion-tab-horizontal-padding-sm: 20px;
+$accordion-tab-horizontal-padding-md: 25px;
+$accordion-tab-horizontal-padding-lg: 25px;
+
+$accordion-body-vertical-padding-xs: 30px;
+$accordion-body-vertical-padding-sm: 30px;
+$accordion-body-vertical-padding-md: 50px;
+$accordion-body-vertical-padding-lg: 50px;
+
+$accordion-body-horizontal-padding-xs: 30px;
+$accordion-body-horizontal-padding-sm: 40px;
+$accordion-body-horizontal-padding-md: 75px;
+$accordion-body-horizontal-padding-lg: 75px;
+
+$accordion-border-radius: $text-block-border-radius;
+
+$accordion-tab-background-closed: $black;
+$accordion-tab-background-open: $black;
+$accordion-tab-icon-closed: $fa-var-chevron-down;
+$accordion-tab-icon-open: $fa-var-chevron-up;
+
+// ----------------------------------------------

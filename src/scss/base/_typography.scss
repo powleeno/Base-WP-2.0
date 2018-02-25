@@ -1,0 +1,83 @@
+// BODY -----------------------------------------
+
+body {
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  line-height: $body-line-height;
+  color: $body-color;
+}
+
+// HEADERS --------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+  color: $header-color;
+}
+
+// XS -------------------------------------------
+body { font-size: $body-font-size-xs; }
+h1 { font-size: $h1-font-size-xs; }
+h2 { font-size: $h2-font-size-xs; }
+h3 { font-size: $h3-font-size-xs; }
+h4 { font-size: $h4-font-size-xs; }
+h5 { font-size: $h5-font-size-xs; }
+h6 { font-size: $h6-font-size-xs; }
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  body { font-size: $body-font-size-sm; }
+  h1 { font-size: $h1-font-size-sm; }
+  h2 { font-size: $h2-font-size-sm; }
+  h3 { font-size: $h3-font-size-sm; }
+  h4 { font-size: $h4-font-size-sm; }
+  h5 { font-size: $h5-font-size-sm; }
+  h6 { font-size: $h6-font-size-sm; }
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+  body { font-size: $body-font-size-md; }
+  h1 { font-size: $h1-font-size-md; }
+  h2 { font-size: $h2-font-size-md; }
+  h3 { font-size: $h3-font-size-md; }
+  h4 { font-size: $h4-font-size-md; }
+  h5 { font-size: $h5-font-size-md; }
+  h6 { font-size: $h6-font-size-md; }
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+  body { font-size: $body-font-size-lg; }
+  h1 { font-size: $h1-font-size-lg; }
+  h2 { font-size: $h2-font-size-lg; }
+  h3 { font-size: $h3-font-size-lg; }
+  h4 { font-size: $h4-font-size-lg; }
+  h5 { font-size: $h5-font-size-lg; }
+  h6 { font-size: $h6-font-size-lg; }
+}
+
+// PARAGRAPH ------------------------------------
+
+p { }
+
+// ANCHOR ---------------------------------------
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+
+}
+
+// LIST -----------------------------------------
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,27 @@
+{
+  "transport": "ftp",
+  "hostname": "host.com",
+  "port": "21",
+  "username": "USERNAME",
+  "password": "PASSWORD",
+  "target": "/path/to/project",
+  "ignore": [
+    ".DS_Store",
+    ".gitignore",
+    ".git/**",
+    "**/.gitkeep",
+    "node_modules/**",
+    "src/**",
+    "gulpfile.js",
+    "package.json",
+    "README.md",
+    ".remote-sync.json",
+    "sample.remote-sync.json"
+  ],
+  "watch": [
+    "/"
+  ],
+  "uploadOnSave": false,
+  "useAtomicWrites": false,
+  "deleteLocal": false
+}

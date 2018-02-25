@@ -1,0 +1,25 @@
+{
+  "name": "base-wp-joe",
+  "version": "1.0.0",
+  "description": "This theme enables devs to quickly be up and running with a wordpress theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jose_brites@bitbucket.org/design_shopp/lighterbase-wp-joe.git"
+  },
+  "author": "Design Shopp",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/design_shopp/lighterbase-wp-joe#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {}
+}

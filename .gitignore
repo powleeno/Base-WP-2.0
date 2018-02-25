@@ -16,3 +16,16 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+/uploads
+/updraft
+mix-manifest.json
+npm-debug.log
+
+.gitkeep
+.DS_Store
+node_modules
+
+.remote-sync.json
+
+.ftpconfig
+.ftpignore

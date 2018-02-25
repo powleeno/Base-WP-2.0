@@ -1,0 +1,48 @@
+@mixin base_reduce_to_color($color) {
+	color: $color;
+	div, section, header, footer, h1, h2, h3, h4, h5, h6, p, ul, li, a, a:hover, a:active, a:visited {
+		color: $color;
+	}
+}
+
+@mixin base_box_shadow($top, $right, $bottom, $left, $color, $opacity) {
+	-webkit-box-shadow: $top $right $bottom $left rgba($color, $opacity);
+	-moz-box-shadow: $top $right $bottom $left rgba($color, $opacity);
+	box-shadow: $top $right $bottom $left rgba($color, $opacity);
+}
+
+@mixin base_placeholder_style($color, $style) {
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-style: $style;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		font-style: $style;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		font-style: $style;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		font-style: $style;
+	}
+}
+
+@mixin base_gradient ($angle, $start_hex, $start_alpha, $end_hex, $end_alpha) {
+  background: -moz-linear-gradient($angle, rgba($start_hex,$start_alpha) 0%, rgba($end_hex,$end_alpha) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba($start_hex,$start_alpha)), color-stop(100%, rgba($end_hex,$end_alpha))); /* safari4+,chrome */
+  background: -webkit-linear-gradient($angle, rgba($start_hex,$start_alpha) 0%, rgba($end_hex,$end_alpha) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient($angle, rgba($start_hex,$start_alpha) 0%, rgba($end_hex,$end_alpha) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient($angle, rgba($start_hex,$start_alpha) 0%, rgba($end_hex,$end_alpha) 100%); /* ie10+ */
+  background: linear-gradient($angle, rgba($start_hex,$start_alpha) 0%, rgba($end_hex,$end_alpha) 100%); /* w3c */
+}
+
+@mixin base_transition($duration) {
+	-webkit-transition: all $duration ease;
+	-moz-transition: all $duration ease;
+	-ms-transition: all $duration ease;
+	-o-transition: all $duration ease;
+	transition: all $duration ease;
+}

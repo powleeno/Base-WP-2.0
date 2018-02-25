@@ -1,0 +1,67 @@
+.mobile-menu {
+  @include base_transition($mobile-menu-transition-time);
+  background-color: $jumbo;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0 - $mobile-menu-width;
+  width: $mobile-menu-width;
+  z-index: $mobile-menu-z-index;
+  &__nav{
+    @include base_transition($mobile-menu-transition-time);
+  }
+  &.is-active {
+    right: 0;
+  }
+}
+
+.mobile-menu {
+  &__nav{
+    li {
+      a {
+        color: $white;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+// XS -------------------------------------------
+
+.mobile-menu__nav {
+  margin-left: $flexboxgrid-gutter-xs / 2;
+  margin-top: $topbar-logo-height-xs + $topbar-vertical-padding-xs * 2 + 8px;
+}
+body.scrolled {
+  .mobile-menu__nav {
+    margin-top: $topbar-scrolled-logo-height-xs + $topbar-scrolled-vertical-padding-xs * 2;
+  }
+}
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  .mobile-menu__nav {
+    margin-left: $flexboxgrid-gutter-sm / 2;
+    margin-top: $topbar-logo-height-sm + $topbar-vertical-padding-sm * 2;
+  }
+  body.scrolled {
+    .mobile-menu__nav {
+      margin-top: $topbar-scrolled-logo-height-sm + $topbar-scrolled-vertical-padding-sm * 2 + 8px;
+    }
+  }
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+
+}

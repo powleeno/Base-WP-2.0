@@ -1,0 +1,40 @@
+
+header {
+
+  @extend %base_background_image;
+  background-color: $base;
+}
+
+// XS -------------------------------------------
+
+header {
+  padding-top: $header-vertical-padding-xs + $topbar-logo-height-xs + $topbar-vertical-padding-xs * 2;
+  padding-bottom: $header-vertical-padding-xs;
+}
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  header {
+    padding-top: $header-vertical-padding-sm + $topbar-logo-height-sm + $topbar-vertical-padding-sm * 2;
+    padding-bottom: $header-vertical-padding-sm;
+  }
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+  header {
+    padding-top: $header-vertical-padding-md + $topbar-logo-height-md + $topbar-vertical-padding-md * 2;
+    padding-bottom: $header-vertical-padding-md;
+  }
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+  header {
+    padding-top: $header-vertical-padding-lg + $topbar-logo-height-lg + $topbar-vertical-padding-lg * 2;
+    padding-bottom: $header-vertical-padding-lg;
+  }
+}

@@ -1,0 +1,120 @@
+@mixin topbar($topbar-vertical-padding, $topbar-logo-height) {
+  height: $topbar-logo-height;
+  padding-top: $topbar-vertical-padding;
+  padding-bottom: $topbar-vertical-padding;
+  &__logo {
+    height: $topbar-logo-height;
+    h3 {
+      font-size: $topbar-logo-height;
+      line-height: $topbar-logo-height;
+    }
+  }
+}
+
+@mixin topbar_elements($topbar-logo-height, $topbar-scrolled-logo-height, $topbar-vertical-padding, $topbar-scrolled-vertical-padding) {
+  .topbar {
+    @include topbar($topbar-vertical-padding, $topbar-logo-height);
+  }
+  body.scrolled {
+    .topbar {
+      @include topbar($topbar-scrolled-vertical-padding, $topbar-scrolled-logo-height);
+    }
+  }
+}
+
+// STRUCTURE ------------------------------------
+
+.topbar {
+  @include base_transition($topbar-transition-time);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $topbar-z-index;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    @include base_transition($topbar-transition-time);
+    display: block;
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+  }
+  &__nav {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+// STYLES ---------------------------------------
+
+.topbar {
+  &__nav {
+    li {
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+      a {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+body {
+  &.scrolled {
+    .topbar {
+      @include base_box_shadow(0, 0, 10px, 0, $black, 0.5);
+      background-color: $white;
+      &__nav {
+        li {
+          a {
+            color: $body-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XS -------------------------------------------
+
+@include topbar_elements($topbar-logo-height-xs, $topbar-scrolled-logo-height-xs, $topbar-vertical-padding-xs, $topbar-scrolled-vertical-padding-xs);
+
+.topbar {
+  &__nav {
+    display: none;
+  }
+}
+
+// SM -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-sm) {
+  @include topbar_elements($topbar-logo-height-sm, $topbar-scrolled-logo-height-sm, $topbar-vertical-padding-sm, $topbar-scrolled-vertical-padding-sm);
+  .topbar {
+    &__nav {
+      display: block;
+    }
+  }
+}
+
+// MD -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-md) {
+  @include topbar_elements($topbar-logo-height-md, $topbar-scrolled-logo-height-md, $topbar-vertical-padding-md, $topbar-scrolled-vertical-padding-md);
+
+}
+
+// LG -------------------------------------------
+
+@media only screen and (min-width: $flexboxgrid-breakpoint-lg) {
+  @include topbar_elements($topbar-logo-height-lg, $topbar-scrolled-logo-height-lg, $topbar-vertical-padding-lg, $topbar-scrolled-vertical-padding-lg);
+}
